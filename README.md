@@ -37,6 +37,7 @@ python scripts/bootstrap_sensitivity.py
 python scripts/composition.py
 python scripts/spatial_diagnostics.py
 python scripts/annual_evi.py
+python scripts/summarize_response_data.py
 ```
 
 The scripts use the supplied derived inputs. Primary and classification scripts
@@ -44,6 +45,10 @@ write results alongside their input tables. Annual EVI and paired-divergence
 recalculations write to `results/recomputed/`; the paired-divergence script accepts
 `--output PATH` and requires an empty output directory. Use a separate checkout
 for recalculation when retaining the supplied reference outputs.
+
+`summarize_response_data.py` exports the response-construction and classification
+summary CSVs used by Figure 4 and the endpoint comparisons in Figure S1 to
+`results/recomputed/response_summary/`. `--output PATH` selects another directory.
 
 The primary outcome is the annual mean of monthly matched EVI effects with at
 least nine usable months. The annual EVI sensitivity construction uses a separate
