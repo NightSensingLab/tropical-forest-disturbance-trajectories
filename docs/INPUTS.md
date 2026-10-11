@@ -28,8 +28,6 @@ are in `results/sensitivity/`. Paired A1 results and bootstrap draws are in
 weights, pre-event control pairs and window, and stabilized IPCW weights.
 Its annual observation threshold is 12. `scripts/annual_evi.py` reproduces the
 annual dynamic-censoring, pre-event control and IPCW estimates from these windows.
-Figure 4 reads the supplied result CSVs in this directory together with the
-primary and classification result CSVs.
 
 ## Additional Monthly Inputs
 

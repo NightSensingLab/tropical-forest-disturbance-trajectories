@@ -11,11 +11,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-import matplotlib as mpl
-
-mpl.use("Agg")
-import matplotlib.pyplot as plt
-
 HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parent
 RUN = PROJECT / "data/primary"
@@ -279,57 +274,6 @@ def balance(cohort: pd.DataFrame, analysis_id: str) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def make_figure(results: pd.DataFrame) -> None:
-    (OUT / "figures").mkdir(parents=True, exist_ok=True)
-    mpl.rcParams.update({
-        "font.family": "sans-serif",
-        "font.sans-serif": ["Arial", "DejaVu Sans"],
-        "font.size": 7.5,
-        "axes.titlesize": 9,
-        "axes.labelsize": 8,
-        "xtick.labelsize": 7,
-        "ytick.labelsize": 7,
-        "pdf.fonttype": 42,
-        "ps.fonttype": 42,
-        "svg.fonttype": "none",
-    })
-    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.4))
-    fig.subplots_adjust(left=0.08, right=0.97, top=0.84, bottom=0.27, wspace=0.27)
-    colors = {"degradation": "#2F6F9F", "deforestation": "#C65A3A"}
-    labels = {"degradation": "Degradation-dominated", "deforestation": "Deforestation-dominated"}
-    for ax, analysis, title in zip(axes, ["A1", "A2"], ["A1: t0–t5 complete cohort", "A2: t0/t3/t5 complete cohort"]):
-        sub = results.loc[(results["analysis"] == analysis) & (results["estimate_type"] == "event_type")]
-        for typ in EVENT_TYPES:
-            g = sub.loc[sub["event_type"] == typ].sort_values("relative_year")
-            if g.empty:
-                continue
-            ax.errorbar(g["relative_year"], g["estimate"], yerr=[g["estimate"] - g["ci_low"], g["ci_high"] - g["estimate"]], marker="o", ms=3.2, lw=1.2, capsize=2, color=colors[typ], label=labels[typ])
-        ctr = results.loc[(results["analysis"] == analysis) & (results["estimate_type"] == "direct_contrast")].sort_values("relative_year")
-        ax.axhline(0, lw=0.6, color="#444444")
-        if not ctr.empty:
-            ax.errorbar(ctr["relative_year"], ctr["estimate"], yerr=[ctr["estimate"] - ctr["ci_low"], ctr["ci_high"] - ctr["estimate"]], marker="D", ms=2.8, lw=0.9, ls="--", color="#252525", capsize=2, label="Direct contrast")
-        ax.set_title(title, loc="left", fontweight="bold")
-        ax.set_xlabel("Relative year", labelpad=10)
-        ax.set_ylabel("Annualized matched EVI effect")
-        ax.set_xticks(sorted(sub["relative_year"].unique()))
-        ax.grid(axis="y", color="#dddddd", lw=0.5)
-        ax.spines["top"].set_visible(False)
-        if analysis == "A2":
-            ax.set_xticks([0, 3, 5])
-    handles, labs = axes[0].get_legend_handles_labels()
-    # The direct-contrast line is documented in the caption/report; keep the
-    # figure legend limited to the two event types for legibility.
-    fig.legend(handles, labs, loc="lower center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 0.03))
-    fig.canvas.draw()
-    fig.savefig(OUT / "figures/fixed_cohort_trajectory.png", dpi=600, bbox_inches="tight")
-    fig.savefig(OUT / "figures/fixed_cohort_trajectory.pdf", bbox_inches="tight")
-    fig.savefig(OUT / "figures/fixed_cohort_trajectory.svg", bbox_inches="tight")
-    fig.savefig(OUT / "figures/fixed_cohort_trajectory.tiff", dpi=600, bbox_inches="tight")
-    plt.close(fig)
-
-
-
-
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     frame, support = load_panel()
@@ -359,7 +303,6 @@ def main() -> None:
     all_counts.to_csv(OUT / "fixed_cohort_counts.csv", index=False)
     regional = pd.concat(regional_outputs, ignore_index=True)
     regional.to_csv(OUT / "fixed_cohort_regional.csv", index=False)
-    make_figure(all_results)
     (OUT / "fixed_cohort_manifest.json").write_text(json.dumps({
         "analysis": "fixed_observation_cohort_sensitivity",
         "seed": SEED,

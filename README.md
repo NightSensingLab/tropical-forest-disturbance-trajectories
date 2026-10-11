@@ -37,7 +37,6 @@ python scripts/bootstrap_sensitivity.py
 python scripts/composition.py
 python scripts/spatial_diagnostics.py
 python scripts/annual_evi.py
-python scripts/figure4.py
 ```
 
 The scripts use the supplied derived inputs. Primary and classification scripts
