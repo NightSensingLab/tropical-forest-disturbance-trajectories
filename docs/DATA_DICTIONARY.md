@@ -1,6 +1,6 @@
-# Frozen Analysis Data Dictionary
+# Data Dictionary
 
-`PARQUET_SCHEMAS.csv` records every included Parquet file's row count, column
+`PARQUET_SCHEMAS.csv` records every included input Parquet file's row count, column
 name and Arrow type. The key scientific meanings below apply across the
 primary tables; source code contains the full eligibility and weighting rules.
 
@@ -10,7 +10,7 @@ primary tables; source code contains the full eligibility and weighting rules.
 | `event_year` | Calendar year of the first qualifying event |
 | `relative_year` | Calendar year relative to the event; t0 is the event year |
 | `event_type` | Degradation- or deforestation-dominated event label |
-| `macroregion` | Prespecified region code; proxy labels are retained in analytical files |
+| `macroregion` | Prespecified rectangular regional domain; region codes include the `_proxy` suffix |
 | `event_area_m2`, `cell_area_m2` | Event or cell area in square metres |
 | `treatment_lon`, `treatment_lat`, `lon`, `lat` | Coordinates in degrees |
 | `disturbance_share` | Annual D+F disturbance fraction |
@@ -24,7 +24,7 @@ primary tables; source code contains the full eligibility and weighting rules.
 | `matched_effect` | Monthly treatment response relative to the weighted matched controls |
 | `annual_matched_effect` | Mean of usable monthly matched effects, at least nine months for the primary annual construction |
 | `usable_months` | Number of usable monthly matched effects in an event-year |
-| `pair_effect_evi_mean` | Outcome field in the matched event window; construction depends on its run directory |
+| `pair_effect_evi_mean` | Outcome field in the matched event window; construction depends on its data directory |
 
 EVI and EVI differences are dimensionless, with the MODIS native scale factor
 already applied. Fractions are on 0-1 unless a CSV header explicitly states
@@ -34,13 +34,13 @@ observed history. No-data scientific quantities remain missing in source files.
 
 ## Construction-Specific Paths
 
-- `runs/20260909-extended-sensitivities/analysis_current_full_history/fixed_matched_event_window.parquet`
+- `data/primary/event_level/fixed_matched_event_window.parquet`
   contains the primary annualized monthly response after common support and
   dynamic censoring.
-- `runs/20260904-expanded-control-pool/fixed_matched_event_window.parquet`
+- `data/annual_evi/fixed_matched_event_window.parquet`
   contains the separate annual EVI response. Its annual observation threshold
   is 12 and its risk set differs from the primary response.
-- `runs/20260904-expanded-control-pool/pre_event_dynamic_control_window.parquet`
+- `data/annual_evi/pre_event_dynamic_control_window.parquet`
   contains the separate annual EVI response under the pre-event control rule.
 
 Identical field names do not make these outcomes interchangeable. The full

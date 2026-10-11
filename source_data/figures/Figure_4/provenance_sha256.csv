@@ -1,6 +1,0 @@
-method,file,sha256,rows_selected,rows_plotted,filter
-primary,runs/20260909-extended-sensitivities/analysis_current_full_history/standardized_event_type_bootstrap.csv,73ed2f8043258369f678501f2e0fc7757f93d66d8ac2d61a3d360e6bb5663332,9,6,run_id; direct EVI contrast; t0-t5
-annual_dynamic,runs/20260904-expanded-control-pool/standardized_event_type_bootstrap.csv,dac27a15cba336a49e93867da25e9736df472f7c97e21b0da0fdda0c935198b1,9,6,run_id; direct EVI contrast; t0-t5
-annual_pre_event,runs/20260904-expanded-control-pool/pre_event_dynamic_standardized_bootstrap.csv,0943374fcbce8b7ce412dda5cdc69a265a061600b2f6c02e17324215f184726b,9,6,run_id; direct EVI contrast; t0-t5
-annual_ipcw,runs/20260904-expanded-control-pool/ipcw_censoring_sensitivity.csv,51d7d5eebf3bf7362e1a303d4e57e5a983f4df4731e63785988e8253923fcca1,9,6,run_id; direct EVI contrast; t0-t5
-classification,runs/20260909-extended-sensitivities/analysis_current_full_history/audit/classification_current_summary.csv,1d64e0f4735e86fa58e20e56b3e199ce26f03dab58530c36fb54c09db1bdc422,6,6,none
