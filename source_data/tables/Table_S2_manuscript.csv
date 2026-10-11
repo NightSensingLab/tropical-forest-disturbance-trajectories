@@ -1,0 +1,9 @@
+Covariate,Definition,Time window,Unit,Post-match SMD,Post-match variance ratio
+baseline_evi_amp,Mean annual EVI amplitude (maximum − minimum),Pre-event (t−3 to t−1),EVI,0.01509,1.05901
+baseline_evi_max,Mean annual maximum EVI,,,0.04109,1.02460
+baseline_evi_mean,Mean annual EVI,,,0.04080,0.97847
+baseline_evi_min,Mean annual minimum EVI,,,0.03823,0.96023
+baseline_evi_sd,Mean annual EVI standard deviation,,,0.00513,1.05016
+baseline_undist_share,Mean proportion of undisturbed forest,,fraction,0.04421,0.87228
+log_analysis_area,Natural logarithm of mean analysis area,,ln (area in m²),−0.00367,1.51912
+pretrend_evi_mean,OLS slope of annual mean EVI,,EVI/year,−0.04846,1.22439

@@ -1,0 +1,10 @@
+Type / comparison,Time,Estimate,95% CI,"Valid events, n","Spatial blocks, n",Description
+Deforestation-dominated,t0,−0.0348,−0.0408 to −0.0291,2769,288,Primary annualized monthly matched-effect response; common-support standardized
+Degradation-dominated,t0,−0.0291,−0.0328 to −0.0246,3812,333,
+Deforestation-dominated,t5,−0.0179,−0.0218 to −0.0137,1791,266,
+Degradation-dominated,t5,0.0009,−0.0004 to 0.0024,3209,315,
+Deforestation − degradation,t0,−0.0057,−0.0097 to −0.0020,2769/3812,402,Primary standardized between-type contrast
+,t5,−0.0188,−0.0228 to −0.0147,1791/3209,382,
+Annual pre-event control risk set,t5,−0.02111,−0.02556 to −0.01670,3304/4898,485,Separate annual-EVI response construction; controls re-matched under the pre-event risk-set definition
+Annual stabilized IPCW,t5,−0.02271,−0.02733 to −0.01795,3332/4960,474,Separate annual-EVI response construction; stabilized weighting for recurrent-disturbance censoring
+Annual dynamic-censoring reference,t5,−0.02232,−0.02653 to −0.01779,3332/4960,485,Separate annual-EVI response construction; reference for within-construction comparisons

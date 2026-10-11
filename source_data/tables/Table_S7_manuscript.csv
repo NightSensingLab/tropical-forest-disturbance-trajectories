@@ -1,0 +1,7 @@
+Validation scheme,Feature set,Pooled AUC,Between-fold AUC SD,Balanced accuracy
+Stratified random 5-fold,t0 only,0.4914,0.0141,0.4930 ± 0.0108
+,Complete t0–t5 trajectory,0.6955,0.0222,0.6463 ± 0.0138
+2° spatial-block 5-fold,t0 only,0.4375,0.0215,0.4756 ± 0.0353
+,Complete t0–t5 trajectory,0.6807,0.0210,0.6331 ± 0.0078
+Leave-one-region-out,t0 only,0.3940,0.0212,0.4599 ± 0.0123
+,Complete t0–t5 trajectory,0.6004,0.1222,0.5714 ± 0.0640

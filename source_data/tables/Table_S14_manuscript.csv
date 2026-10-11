@@ -1,0 +1,5 @@
+Specification,Multiplier cap,Degradation-dominated EVI response,Deforestation-dominated EVI response,Between-type contrast,95% CI,ESS (deforestation/degradation),"Valid events, n (deforestation/degradation)"
+Primary (untruncated),—,0.00086,–0.01794,–0.01880,–0.02283 to –0.01474,488.5/1367.0,1791/3209
+99th-percentile cap,3.779,0.00032,–0.01767,–0.01799,–0.02201 to –0.01396,839.5/2042.5,1791/3209
+Cap at 10,10.000,0.00070,–0.01774,–0.01844,–0.02247 to –0.01448,670.4/1706.8,1791/3209
+Cap at 20,20.000,0.00086,–0.01785,–0.01871,–0.02274 to –0.01469,569.7/1372.1,1791/3209

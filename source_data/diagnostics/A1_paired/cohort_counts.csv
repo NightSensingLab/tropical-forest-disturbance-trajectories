@@ -1,0 +1,3 @@
+event_type,n_events,weight_sum,spatial_blocks,weighted_ESS
+deforestation,766,4229308879.215919,156,244.91428772673262
+degradation,1703,10091558101.919203,189,609.71103962424627

@@ -1,0 +1,5 @@
+event_type,n_events,weight_sum,analysis,ess,years_required,no_censor_through_t5,cohort_event_count_total
+deforestation,766,4229308879.215919,A1,244.91428772673262,"0,1,2,3,4,5",True,2469
+degradation,1703,10091558101.919203,A1,609.7110396242463,"0,1,2,3,4,5",True,2469
+deforestation,1112,6314287717.488548,A2,274.0345962332292,"0,3,5",True,3468
+degradation,2356,14541849337.235357,A2,971.1003583984342,"0,3,5",True,3468

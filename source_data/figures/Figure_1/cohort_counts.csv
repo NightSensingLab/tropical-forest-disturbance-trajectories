@@ -1,0 +1,5 @@
+cohort,event_count,source
+eligible,24406,runs/20260909-extended-sensitivities/analysis_current_full_history/history_qualified_candidates.parquet
+matched,16747,runs/20260909-extended-sensitivities/analysis_current_full_history/matched_treatments.parquet
+common_support,10970,runs/20260909-extended-sensitivities/analysis_current_full_history/common_support_weights.parquet
+complete,3881,runs/20260909-extended-sensitivities/analysis_current_full_history/audit/classification_current_cohort.csv

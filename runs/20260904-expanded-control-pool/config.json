@@ -1,0 +1,66 @@
+{
+  "run_id": "expanded_control_pool_full_history_1990",
+  "legacy_run_id": "full_history_first_event_1990",
+  "analysis_label": "TMF full-history first-threshold events with expanded local control pool",
+  "first_event_history_start": 1990,
+  "first_event_definition": "first_threshold_event_over_full_available_tmf_history",
+  "control_history_start": 1990,
+  "history_end": 2023,
+  "analysis_years": [
+    2001,
+    2023
+  ],
+  "primary_event_years": [
+    2004,
+    2018
+  ],
+  "feature_years": [
+    2004,
+    2018
+  ],
+  "relative_years": [
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "event_thresholds": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "primary_event_threshold": 0.1,
+  "obs_thresholds": [
+    8,
+    12,
+    16
+  ],
+  "primary_obs_threshold": 12,
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 20260725,
+  "primary_radius_km": 50,
+  "fallback_radius_km": 100,
+  "max_controls": 3,
+  "feature_root": "02_analysis/integrated/TropicalRainforest_integrated_analysis/results/07_matched_control/work/features/obs12",
+  "stage03_dir": "01_data/upstream/TropicalRainforest_cloud_analysis/03_combined_panel/parts",
+  "legacy_catalog": "02_analysis/integrated/TropicalRainforest_integrated_analysis/results/06_event_response/event_catalog.parquet",
+  "legacy_pairs": "02_analysis/integrated/TropicalRainforest_integrated_analysis/results/major23_revision/all_first_matched_pairs.parquet",
+  "legacy_window": "02_analysis/integrated/TropicalRainforest_integrated_analysis/results/major23_revision/all_first_matched_event_window.parquet",
+  "legacy_isolated_window": "02_analysis/integrated/TropicalRainforest_integrated_analysis/results/major23_revision/isolated_matched_event_window.parquet",
+  "legacy_output_root": "02_analysis/integrated/TropicalRainforest_integrated_analysis/results/major23_revision",
+  "historical_screening_root": "runs/20260904-historical-tmf-screening",
+  "restricted_run_root": "runs/20260904-full-history-first-event",
+  "output_root": "runs/20260904-expanded-control-pool",
+  "control_history_extraction_root": "runs/20260904-expanded-control-pool/control_history_extraction",
+  "earth_engine_project": "",
+  "tmf_raw_full_cover_value": 0.0029050935991108418,
+  "bootstrap_block_degrees": 2,
+  "minimum_expected_control_grids": 900000,
+  "extraction_batch_size": 50,
+  "extraction_workers": 8
+}

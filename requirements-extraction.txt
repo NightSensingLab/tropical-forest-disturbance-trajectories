@@ -1,0 +1,6 @@
+# Optional network/extraction dependencies; versions have not been frozen.
+-r requirements.txt
+earthengine-api
+requests
+rasterio
+geemap

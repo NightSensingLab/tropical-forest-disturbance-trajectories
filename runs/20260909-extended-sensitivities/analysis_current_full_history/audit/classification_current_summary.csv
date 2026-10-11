@@ -1,0 +1,7 @@
+validation,feature_set,sample_n,deforestation_n,degradation_n,folds_used,auc,auc_sd,balanced_accuracy,balanced_accuracy_sd,seed,model
+random_stratified_5fold,t0_only,3881,1204,2677,5,0.491355548743635,0.01405334072328245,0.4929980504755086,0.010778854338742407,20260725,ridge linear discriminant; equal-event weighting
+random_stratified_5fold,t0_to_t5_trajectory,3881,1204,2677,5,0.6954743682185022,0.02220328975585208,0.6462876127178123,0.013847253200131325,20260725,ridge linear discriminant; equal-event weighting
+spatial_block_2deg_5fold,t0_only,3881,1204,2677,5,0.43749170055735026,0.02147610133661656,0.47560712623920753,0.03529438356160768,20260725,ridge linear discriminant; equal-event weighting
+spatial_block_2deg_5fold,t0_to_t5_trajectory,3881,1204,2677,5,0.6807041526377645,0.02103805522626905,0.6330583526228821,0.007824932992235419,20260725,ridge linear discriminant; equal-event weighting
+region_leave_one_out,t0_only,3881,1204,2677,4,0.3940141006754971,0.02123527553842513,0.4598630464877134,0.012295077385036579,20260725,ridge linear discriminant; equal-event weighting
+region_leave_one_out,t0_to_t5_trajectory,3881,1204,2677,4,0.6003742350551083,0.12222668678820514,0.5714158331220709,0.06400500709741391,20260725,ridge linear discriminant; equal-event weighting

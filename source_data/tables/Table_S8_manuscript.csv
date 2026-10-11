@@ -1,0 +1,9 @@
+Event type,Region,"Events with recurrent disturbance, n","Matched first events, n",Proportion with recurrent disturbance,Mean D + F,Mean D,Mean F
+Deforestation-dominated,Amazon,1699,4860,35.0%,0.182,0.034,0.147
+,Congo Basin,115,510,22.5%,0.123,0.034,0.089
+,Southeast Asia,690,1668,41.4%,0.160,0.022,0.137
+,Other tropical regions,179,663,27.0%,0.146,0.038,0.108
+Degradation-dominated,Amazon,676,4844,14.0%,0.210,0.165,0.045
+,Congo Basin,66,546,12.1%,0.154,0.122,0.032
+,Southeast Asia,217,2237,9.7%,0.165,0.140,0.025
+,Other tropical regions,140,1419,9.9%,0.231,0.202,0.029

@@ -1,0 +1,19 @@
+Sample stage,Region,Event type,"Retained, n","Excluded, n",Screening criterion or explanation
+All first events,Global,All,24406,0,"First threshold-level events identified from the 1990–2023 TMF record, restricted to 2004–2018"
+Matched-event cohort,,,16747,7659,"Annual EVI/covariate eligibility; all 16,747 eligible events found controls"
+Five-year no-repeat count,,,12965,N/A,"Descriptive count within the 16,747 matched events; 3,782 experienced threshold-level recurrence during follow-up."
+Matched first-event cohort,Amazon,Deforestation-dominated,4860,0,Regional breakdown of the matched-event cohort
+,,Degradation-dominated,4844,,
+,Congo Basin,Deforestation-dominated,510,,
+,,Degradation-dominated,546,,
+,Southeast Asia,Deforestation-dominated,1668,,
+,,Degradation-dominated,2237,,
+,Other tropical regions,Deforestation-dominated,663,,
+,,Degradation-dominated,1419,,
+All-first dynamic censoring,Global,All,16747,0,Observations censored from the year of the next threshold-level disturbance onward
+Common-support eligibility,,Deforestation-dominated,5139,2562,Strata containing only one event type were excluded
+,,Degradation-dominated,5831,3215,
+Main t0 outcome-available,,Deforestation-dominated,2769,2370,Excluded if fewer than nine valid matched months were available; no recurrent-disturbance censoring at t0
+,,Degradation-dominated,3812,2019,
+Main t5 estimation,,Deforestation-dominated,1791,3348,Exclusions relative to common-support eligibility reflect response unavailability and recurrent-disturbance censoring
+,,Degradation-dominated,3209,2622,

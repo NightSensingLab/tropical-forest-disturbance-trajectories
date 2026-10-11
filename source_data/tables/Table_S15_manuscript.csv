@@ -1,0 +1,7 @@
+Relative year,Event type,Primary-analysis n,Event-level ESS,D+F,Dominant-process share ,Baseline undisturbed-forest proportion,Regional composition (%) (Amazon/Congo Basin/Southeast Asia/Other tropical regions),Between-type weighted SMD (D + F / P / baseline forest; max |SMD|)
+t0,Degradation-dominated,3812,1773.5,0.270,0.774,0.703,81.1%/3.1%/8.3%/7.5%,0.017/–0.032/–0.030; max 0.032
+,Deforestation-dominated,2769,876.2,0.274,0.769,0.695,78.7%/3.9%/9.8%/7.6%,
+t3,Degradation-dominated,3357,1139.4,0.274,0.783,0.700,79.0%/3.3%/10.1%/7.5%,0.019/–0.304/–0.226; max 0.304
+,Deforestation-dominated,1871,566.3,0.278,0.738,0.644,76.4%/5.3%/9.8%/8.4%,
+t5,Degradation-dominated,3209,1367.0,0.270,0.781,0.691,78.6%/3.4%/10.5%/7.6%,–0.010/–0.265/–0.270; max 0.270
+,Deforestation-dominated,1791,488.5,0.267,0.742,0.623,76.5%/5.4%/9.7%/8.4%,

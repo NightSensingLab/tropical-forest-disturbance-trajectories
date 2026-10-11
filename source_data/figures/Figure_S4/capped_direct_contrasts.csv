@@ -1,0 +1,4 @@
+run_id,cap,event_type,relative_year,estimate,ci_low,ci_high,valid_replicates,effective_sample_size
+expanded_control_pool_full_history_1990,3.77917710343365,deforestation_minus_degradation,5,-0.0179893397849434,-0.0220139274017266,-0.0139562472863438,1000,
+expanded_control_pool_full_history_1990,10.0,deforestation_minus_degradation,5,-0.018437145905189,-0.022467766551276,-0.014477975824569,1000,
+expanded_control_pool_full_history_1990,20.0,deforestation_minus_degradation,5,-0.0187101029557115,-0.0227412081652318,-0.0146885229171164,1000,

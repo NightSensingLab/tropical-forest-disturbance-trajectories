@@ -1,0 +1,21 @@
+{
+  "analysis": "fixed_observation_cohort_sensitivity",
+  "seed": 20260725,
+  "replicates": 1000,
+  "block_degrees": 2.0,
+  "A1_years": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "A2_years": [
+    0,
+    3,
+    5
+  ],
+  "no_censor_rule": "censor_relative_year is NA or >5",
+  "weights": "frozen common-support standardized_event_weight"
+}

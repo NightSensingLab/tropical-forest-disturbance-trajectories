@@ -1,0 +1,16 @@
+variable,bin_1based,lower_boundary,upper_boundary,n,interval_rule
+disturbance_share,1,0.10000764589656994,0.11152616044382944,3350,right-closed; first interval includes minimum
+disturbance_share,2,0.11152616044382944,0.1289187286440786,3349,right-closed; first interval includes minimum
+disturbance_share,3,0.1289187286440786,0.15931957250942738,3349,right-closed; first interval includes minimum
+disturbance_share,4,0.15931957250942738,0.2305353652521372,3349,right-closed; first interval includes minimum
+disturbance_share,5,0.2305353652521372,0.9872863326553277,3350,right-closed; first interval includes minimum
+purity,1,0.5000336997798656,0.6493268349582983,3350,right-closed; first interval includes minimum
+purity,2,0.6493268349582983,0.7816938775106625,3349,right-closed; first interval includes minimum
+purity,3,0.7816938775106625,0.8863397292716046,3349,right-closed; first interval includes minimum
+purity,4,0.8863397292716046,0.9633990697912169,3349,right-closed; first interval includes minimum
+purity,5,0.9633990697912169,1.0,3350,right-closed; first interval includes minimum
+baseline_undist_share,1,0.00017430449722229146,0.41355919874215874,3350,right-closed; first interval includes minimum
+baseline_undist_share,2,0.41355919874215874,0.6102492148195857,3349,right-closed; first interval includes minimum
+baseline_undist_share,3,0.6102492148195857,0.7635980114536679,3349,right-closed; first interval includes minimum
+baseline_undist_share,4,0.7635980114536679,0.8886501119530704,3349,right-closed; first interval includes minimum
+baseline_undist_share,5,0.8886501119530704,0.9999709071231143,3350,right-closed; first interval includes minimum

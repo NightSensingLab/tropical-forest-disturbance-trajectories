@@ -1,0 +1,10 @@
+relative_year,baseline,event_year,follow_up,censoring
+-3,True,False,False,"At and after the next annual disturbed-fraction >= 10% event, if present"
+-2,True,False,False,"At and after the next annual disturbed-fraction >= 10% event, if present"
+-1,True,False,False,"At and after the next annual disturbed-fraction >= 10% event, if present"
+0,False,True,True,"At and after the next annual disturbed-fraction >= 10% event, if present"
+1,False,False,True,"At and after the next annual disturbed-fraction >= 10% event, if present"
+2,False,False,True,"At and after the next annual disturbed-fraction >= 10% event, if present"
+3,False,False,True,"At and after the next annual disturbed-fraction >= 10% event, if present"
+4,False,False,True,"At and after the next annual disturbed-fraction >= 10% event, if present"
+5,False,False,True,"At and after the next annual disturbed-fraction >= 10% event, if present"

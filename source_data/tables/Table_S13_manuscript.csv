@@ -1,0 +1,5 @@
+Variable / diagnostic,Range / binning,Reference sample,Description
+"Total disturbance fraction, D + F",Q1=0.100–0.112 (n=3350); Q2=0.112–0.129 (n=3349); Q3=0.129–0.159 (n=3349); Q4=0.159–0.231 (n=3349); Q5=0.231–0.987 (n=3350),All matched events,"Empirical quintiles from 16,747 matched events"
+"Dominant-process share, ",Q1=0.500–0.649 (n=3350); Q2=0.649–0.782 (n=3349); Q3=0.782–0.886 (n=3349); Q4=0.886–0.963 (n=3349); Q5=0.963–1.000 (n=3350),,Empirical quintiles; boundaries shown in the preceding column
+Baseline undisturbed-forest proportion,Q1=0.000–0.414 (n=3350); Q2=0.414–0.610 (n=3349); Q3=0.610–0.764 (n=3349); Q4=0.764–0.889 (n=3349); Q5=0.889–1.000 (n=3350),,Empirical quintiles; boundaries shown in the preceding column
+Standardization multiplier,min 0.507; Q25 0.644; median 0.807; Q75 1.115; max 37.104,Common-support-eligible events,"10,970 common-support-eligible events; pooled P99 = 3.779"
