@@ -33,6 +33,7 @@ python scripts/classify.py
 python scripts/fixed_cohorts.py
 python scripts/paired_divergence.py
 python scripts/sensitivity.py
+python scripts/availability.py
 python scripts/bootstrap_sensitivity.py
 python scripts/composition.py
 python scripts/spatial_diagnostics.py
@@ -57,12 +58,15 @@ contains 3,881 complete t0-t5 trajectories and is selected independently of the
 common-support restriction. Uncertainty follows the analysis-specific spatial
 block bootstrap or classification validation described in the manuscript.
 
-[`docs/INPUTS.md`](docs/INPUTS.md) lists the included inputs and the additional
-monthly panels required by `scripts/availability.py`.
+[`docs/INPUTS.md`](docs/INPUTS.md) lists the included inputs, including the
+event-year monthly panels used by `scripts/availability.py`.
 [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md) describes units and fields.
-Reproduction starts from the supplied derived inputs. Satellite extraction and
-additional intermediate processing require the datasets and scripts available
-from the corresponding author as stated in the manuscript.
+Reproduction starts from the supplied derived inputs. The repository does not
+redistribute the original TMF or MODIS source products; those products remain
+available from their public providers at the links below and should be obtained
+under the providers' terms. The included analysis inputs, source data, and
+scripts support reproduction of the reported results without access to private
+files.
 
 ## Data Sources
 
@@ -70,3 +74,6 @@ from the corresponding author as stated in the manuscript.
   (Vancutsem et al., 2021), 1990-2023 history from the 2025 update.
 - [MODIS/Terra MOD13Q1 Collection 6.1](https://doi.org/10.5067/MODIS/MOD13Q1.061)
   (Didan, 2021), EVI observations for 2001-2023.
+- [Natural Earth Admin 0, release v5.1.2](https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/10m_cultural),
+  1:10 million map background. Natural Earth data are in the
+  [public domain](https://www.naturalearthdata.com/about/terms-of-use/).

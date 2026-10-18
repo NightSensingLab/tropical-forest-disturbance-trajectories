@@ -31,14 +31,17 @@ annual dynamic-censoring, pre-event control and IPCW estimates from these window
 `scripts/summarize_response_data.py` combines those saved result tables with the
 primary and classification summaries for Figures 4 and S1.
 
-## Additional Monthly Inputs
+## Monthly Availability Inputs
 
 `scripts/availability.py` decomposes event-year response availability using
 `data/primary/subannual/parts_monthly/event_year=YYYY/part.parquet`, for event years
-2004-2018. These grid-level monthly panels are additional intermediates available
-from the corresponding author. The resulting availability tables are supplied
-in `results/sensitivity/`.
+2004-2018. The included panels contain only the t0 rows and 14 columns read by
+this script, preserving the monthly observations and their quality indicators.
+They contain 626,976 treatment/control role-month records in total. The other
+relative years and unused columns are not needed for this diagnostic. The
+resulting availability tables are supplied in `results/sensitivity/`.
 
-Satellite extraction and reconstruction of matching candidates require the
-annual TMF/EVI grid panels, candidate feature parts and extraction scripts.
-The supplied inputs support reproduction after those processing steps.
+The repository does not redistribute the original TMF or MODIS source products.
+The supplied derived inputs support reproduction of the reported analyses,
+while the public source products can be obtained from the provider links in
+`README.md`.

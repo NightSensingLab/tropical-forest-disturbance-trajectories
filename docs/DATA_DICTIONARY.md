@@ -32,6 +32,17 @@ percent. Missing outcome values are unavailable observations, not zero effects.
 A missing censor year indicates no recorded subsequent censoring in the
 observed history. No-data scientific quantities remain missing in source files.
 
+`data/primary/subannual/parts_monthly/event_year=*/part.parquet` contains the
+event-year (t0) monthly observations for the outcome-availability diagnostic.
+`role` distinguishes treatment and control observations. `evi_mean` is the
+monthly EVI mean; `baseline_evi` is the same-month pre-event baseline, and
+`evi_anomaly` is the difference from that baseline. `baseline_year_count` counts
+contributing baseline years. `valid_composite_count` and
+`expected_composite_count` count valid and expected 16-day composites;
+`coverage_fraction` is their ratio, and `mean_valid_pixel_fraction` is the
+mean fraction of valid pixels. Counts are dimensionless integers and fractions
+range from 0 to 1.
+
 ## Construction-Specific Paths
 
 - `data/primary/event_level/fixed_matched_event_window.parquet`

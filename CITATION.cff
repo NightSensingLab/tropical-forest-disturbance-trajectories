@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as follows."
+title: "Tropical forest disturbance trajectories: analysis code and derived datasets"
+type: software
+repository-code: "https://github.com/NightSensingLab/tropical-forest-disturbance-trajectories"
+url: "https://github.com/NightSensingLab/tropical-forest-disturbance-trajectories"
+keywords:
+  - tropical forests
+  - forest degradation
+  - deforestation
+  - remote sensing
+  - Enhanced Vegetation Index
+authors:
+  - given-names: Zihao
+    family-names: Zheng
+  - given-names: Zhenxiang
+    family-names: Ling
+  - given-names: Zheng
+    family-names: Cao
+  - given-names: Zhiwei
+    family-names: Yang
+  - given-names: Zhicheng
+    family-names: Yang
+  - given-names: Lingzi
+    family-names: Mo
+  - given-names: Liang
+    family-names: Zhong
+  - given-names: Dong
+    family-names: Xu
+  - given-names: Hong
+    family-names: Zhu
+  - given-names: Zhifeng
+    family-names: Wu
