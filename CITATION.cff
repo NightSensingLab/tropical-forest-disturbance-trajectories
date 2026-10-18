@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite it as follows."
 title: "Tropical forest disturbance trajectories: analysis code and derived datasets"
 type: software
+license: MIT
 repository-code: "https://github.com/NightSensingLab/tropical-forest-disturbance-trajectories"
 url: "https://github.com/NightSensingLab/tropical-forest-disturbance-trajectories"
 keywords:

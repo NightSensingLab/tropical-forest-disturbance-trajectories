@@ -250,12 +250,7 @@ def summarize(agg: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
 
 
 def logistic_summary(agg: pd.DataFrame) -> str:
-    """Fit a small unregularized IRLS logistic diagnostic using NumPy only.
-
-    The project runtime does not bundle statsmodels/sklearn.  This implementation
-    is intentionally transparent and reports convergence and a model matrix
-    condition check rather than pretending to be a production inferential model.
-    """
+    """Fit an unregularized IRLS logistic diagnostic with convergence checks."""
     d = agg.copy()
     d["available"] = d["outcome_available_t0"].astype(int)
     predictors = [
@@ -365,9 +360,9 @@ def main() -> None:
     report = {
         **meta,
         "source_files": {
-            "common_support": str(CS_PATH),
-            "matched_links": str(LINK_PATH),
-            "monthly_stage08_glob": str(MONTHLY_ROOT / "event_year=*/part.parquet"),
+            "common_support": CS_PATH.relative_to(ROOT).as_posix(),
+            "matched_links": LINK_PATH.relative_to(ROOT).as_posix(),
+            "monthly_stage08_glob": (MONTHLY_ROOT / "event_year=*/part.parquet").relative_to(ROOT).as_posix(),
             "gate_implementation": "src/pipeline/subannual_response.py:monthly_usable_mask and build_monthly_matched_effects",
         },
         "gate": {

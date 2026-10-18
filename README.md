@@ -68,6 +68,13 @@ under the providers' terms. The included analysis inputs, source data, and
 scripts support reproduction of the reported results without access to private
 files.
 
+## Licensing
+
+Original analysis code is released under the [MIT License](LICENSE-CODE).
+Author-generated derived tables and data products are released under
+[Creative Commons Attribution 4.0 International](LICENSE-DATA).
+Third-party source products remain under their original provider terms.
+
 ## Data Sources
 
 - [JRC Tropical Moist Forest Annual Changes](https://forobs.jrc.ec.europa.eu/TMF/data)
